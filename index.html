@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="hi">
 <head>
@@ -43,40 +44,31 @@
             max-width: 90%;
             text-transform: uppercase;
             box-shadow: 0 0 20px rgba(50, 255, 0, 0.5);
-            animation: floating 2s ease-in-out infinite;
-position: relative;
-overflow: hidden;
         }
-        .join-btn::after {
-    content: "";
-    position: absolute;
-    top: -50%;
-    left: -60%;
-    width: 25%;
-    height: 200%;
-    background: rgba(255, 255, 255, 0.4);
-    transform: rotate(30deg);
-    animation: shine 3s infinite;
-}
         .footer-text { font-size: 14px; color: #ccc; margin-top: 10px; }
-  /* Button ko upar-niche move karne ke liye */
-@keyframes floating {
-    0% { transform: translateY(0px); }
-    50% { transform: translateY(-12px); }
-    100% { transform: translateY(0px); }
-}
-
-/* Button par chamakti patti (shine) ke liye */
-@keyframes shine {
-    0% { left: -60%; }
-    20% { left: 120%; }
-    100% { left: 120%; }
-}  </style>
+    </style>
 </head>
+    <!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '886078547122155');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=886078547122155&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
 <body>
 
 <div class="container">
-    <div class="brand-name">ARJUN BHAI </div>
+    <div class="brand-name">ARJUN BHAI</div>
 
     <img src="logo.png" alt="Hyper Logo" class="profile-pic">
 
@@ -89,8 +81,13 @@ overflow: hidden;
         <div>✅ 5/5 EXPERT CRICKET TIPS TODAY</div>
         <div>UPCOMING LEAGUE ANALYSIS 🏆</div>
     </div>
-
-    <a href="https://t.me/+URe4jrm-m-Y4MDA1" class="join-btn">
+<div style="text-align: center; margin-bottom: 15px;">
+    <div style="display: inline-block; padding: 6px 15px; border-radius: 5px; background: rgba(255,0,0,0.1); border: 1px solid #ff0000;">
+        <span style="color: #ff4d4d; font-weight: bold; font-size: 13px;">📢 PAID PROMOTION: </span>
+        <a href="https://t.me/HYPER_OWNER" style="color: #fff; text-decoration: none; font-weight: bold; font-size: 14px;">@Arjun_Back</a>
+    </div>
+</div>
+    <a href="https://t.me/Hyper_Brand_OG_Bot" class="join-btn" onclick="fbq('track', 'Lead');">
         JOIN ARJUN BHAI <br> CHANNEL 🚀
     </a>
 
