@@ -47,6 +47,17 @@
 position: relative;
 overflow: hidden;
         }
+        .join-btn::after {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -60%;
+    width: 25%;
+    height: 200%;
+    background: rgba(255, 255, 255, 0.4);
+    transform: rotate(30deg);
+    animation: shine 3s infinite;
+}
         .footer-text { font-size: 14px; color: #ccc; margin-top: 10px; }
   /* Button ko upar-niche move karne ke liye */
 @keyframes floating {
